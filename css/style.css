@@ -1,0 +1,418 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+
+}
+
+/* container */
+.container {
+    padding: 40px 56px 0px 56px;
+    width: 100%;
+}
+
+/* title */
+.ttl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ttl h1 {
+    color: #887569;
+    text-align: right;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding-bottom: 32px;
+}
+
+/* header */
+header {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav a {
+    color: #fff;
+}
+
+.nav a:hover {
+    color: #000;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 50;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #000;
+}
+
+/* banner */
+.banner {
+    z-index: 100;
+    background: url("../media/banner/banner-bg.png");
+    width: 100vw;
+    height: 95vh;
+
+    position: relative
+}
+
+.titles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.subtitle a {
+    padding-bottom: 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid #ffffff00;
+
+}
+
+.subtitle a:hover {
+    color: #fff;
+    border-bottom: 1px solid #ffffff83;
+}
+
+.slider-points {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15px;
+
+}
+
+.point {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 100px;
+
+    cursor: pointer;
+}
+
+.non-activ {
+    opacity: 50%;
+}
+
+.non-activ:hover {
+    opacity: 90%;
+}
+
+.slider-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translate(-50%, 0);
+}
+
+.slider-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(-50%, 0);
+}
+
+.slider-arrow:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+/* carts */
+.carts-arrow {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #00000085;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.carts-arrow:hover {
+    background: #000000;
+
+}
+
+
+.carts-arrow-left {
+    position: absolute;
+    top: 40%;
+    transform: translate(0%, -50%);
+    left: -17px;
+}
+
+.carts-arrow-right {
+    position: absolute;
+    top: 40%;
+    transform: translate(0%, -50%);
+    right: -17px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.carts {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.cart img {
+    width: 337px;
+    height: 475px;
+    padding-bottom: 5px;
+}
+
+.cart img {
+    width: 337px;
+    height: 475px;
+    padding-bottom: 5px;
+}
+
+.cart:hover img {
+    opacity: 85%;
+}
+
+.cart:hover a {
+    color: #000;
+}
+
+
+.cart a {
+    color: #887569;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+/* salles */
+
+.span {
+    text-decoration: solid;
+}
+
+.cart a {
+    display: flex;
+    gap: 10px;
+}
+
+/* line */
+
+.line {
+    margin-bottom: 60px;
+    margin-top: 50px;
+    background: #887569;
+    width: 100%;
+    height: 1px;
+    opacity: 15%;
+}
+
+.logo-footer {
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: #fff;
+
+    cursor: pointer;
+    color: #887569;
+    padding-bottom: 10px;
+}
+
+footer {
+    gap: 130px;
+    padding: 0px 56px 60px 56px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+}
+
+.section p {
+    max-width: 262px;
+    color: #887569;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.footer-title h2 {
+    color: #887569;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section a {
+    color: #887569;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* burger */
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .burger:hover {
+        display: block;
+        color: #000000;
+    }
+
+    .container {
+        padding: 40px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .logo {
+        top: 20px;
+        font-size: 10px;
+    }
+
+    .icons img {
+        width: 17px;
+        height: 18px;
+    }
+
+    .title h1 {
+        font-size: 45px;
+    }
+
+    .slider-arrow-right {
+        right: 10px;
+    }
+
+    .slider-arrow-left {
+        left: 20px;
+    }
+
+    .point {
+        width: 10px;
+        height: 10px;
+    }
+
+    .carts-arrows{
+        display: none;
+    }
+
+    footer {
+        gap: 50px;
+        padding: 0px 56px 60px 56px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: left;
+      }
+}
